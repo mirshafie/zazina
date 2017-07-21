@@ -18,6 +18,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 
 }
 .bgimg {
@@ -30,20 +31,26 @@ body, html {
   left: 0;
   top: 50%;
   width: 100%;
-  margin-top: -5em;
-  text-align: center;
+  margin-top: -16.8em;
 
   color: white;
-  font-size: 3em;
   font-family: 'Aref Ruqaa', serif;
   text-shadow: 0px 0px 7px #dddddd;
 
 }
 
-.latin	{ letter-spacing: 13px; }
-.farsi	{ letter-spacing: 0px; }
+
+.column { max-width: 500px; width: 50%; margin: 0 auto; }
+.latin	{ margin: 1em 0; letter-spacing: 13px; font-size: 3em; }
+.farsi	{ margin: 1em 0; letter-spacing: 0px; font-size: 3em; }
+.email	{ margin: 0.5em 0; letter-spacing: 5px; font-size: 1.5em; }
 
 img { margin: 0; padding: 0; display: block; margin: auto; }
+
+a:link { color: white; }
+a:visited { color: white; }
+a:hover { color: white; }
+a:active { color: white; }
 
 </style>
 </head>
@@ -51,15 +58,22 @@ img { margin: 0; padding: 0; display: block; margin: auto; }
 
 <div class="bgimg">
   <div class="caption">
-	<p class="latin">
+    <div class="column">
+	<div class="latin">
 		Zazina
-	</p>
+	</div>
 
 	<img src="zazina.png">
 
-	<p class="farsi" dir="rtl">
-		هادی آقائی ٠٩١٠٩٣٣٣٣٣٣٣٣ 
-	</p>
+	<div class="farsi">
+		+989121071273 هادی آقائی
+	</div>
+
+	<div class="email">
+		<a href="mailto:info@zazina.com">info@zazina.com</a>
+	</div>
+
+    </div>
   </div>
 </div>
 
